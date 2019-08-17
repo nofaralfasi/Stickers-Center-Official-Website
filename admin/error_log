@@ -1,0 +1,72 @@
+[10-Aug-2019 19:50:10 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:06:31 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:09:14 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:16:44 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:24:25 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:28:34 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:31:52 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:32:13 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[10-Aug-2019 20:33:12 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:11
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(31): DB\MySQLi->__construct('localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#1 /home2/nofar/public_html/system/framework.php(80): DB->__construct('mysqli', 'localhost', 'nofar', 'A-saeEoTu!GP', 'nofar_scdb', '3306')
+#2 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#3 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#4 {main}
+  thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
