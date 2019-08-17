@@ -1,24 +1,28 @@
+ /*
 * {
     box-sizing: border-box;
 }
- 
+
 html {
     width: 100%;
     min-height: 100%;
     margin: 0;
     padding: 0;
 }
- 
+ */
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	color: #666;
 	font-size: 13px;
 	line-height: 20px;
+	width: 100%;
+	/*
     width: inherit;
     min-height: inherit;
     margin: 0;
     padding: 0;
+	*/
 }
 
 h1,
