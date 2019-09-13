@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <code></code>
+  <name></name>
+  <version>1.0</version>
+  <author></author>
+  <link></link>
+  
+  <file path="catalog/view/theme/simplica/template/common/cart.twig">
+    <operation>
+      <search>
+        <![CDATA[<div id="cart" class="btn-group btn-block">]]>
+      </search>
+      <add position="replace">
+        <![CDATA[<div id="cart" class="btn-group">]]>
+      </add>
+    </operation>
+  </file>
+  <!-- OwlCarousel-->
+  <file path="catalog/controller/extension/module/{carousel,banner}*.php">
+    <operation>
+      <search>
+        <![CDATA[$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/opencart.css');]]>
+      </search>
+      <add position="replace">
+        <![CDATA[$this->document->addStyle('catalog/view/theme/simplica/stylesheet/swiper.opencart.css');]]>
+      </add>
+    </operation>
+  </file>
+  <file path="catalog/controller/extension/module/slideshow.php">
+    <operation>
+      <search>
+        <![CDATA[$this->document->addStyle('catalog/view/javascript/jquery/swiper/css/opencart.css');]]>
+      </search>
+      <add position="replace">
+        <![CDATA[$this->document->addStyle('catalog/view/theme/simplica/stylesheet/swiper.opencart.css');]]>
+      </add>
+    </operation>
+  </file>
+  <file path="catalog/view/theme/simplica/template/common/footer.twig">
+
+  </file>
+</modification>
