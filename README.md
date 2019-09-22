@@ -1,1 +1,1 @@
-# open-cart-ecommerce
+# Stickers Center Official Website
