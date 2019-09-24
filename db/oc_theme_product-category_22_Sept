@@ -1,0 +1,170 @@
+{{ header }}
+&lt;div id=&quot;product-category&quot; class=&quot;container&quot;&gt;
+  &lt;ul class=&quot;breadcrumb&quot;&gt;
+    {% for breadcrumb in breadcrumbs %}
+    &lt;li&gt;&lt;a href=&quot;{{ breadcrumb.href }}&quot;&gt;{{ breadcrumb.text }}&lt;/a&gt;&lt;/li&gt;
+    {% endfor %}
+  &lt;/ul&gt;
+  &lt;div class=&quot;row&quot;&gt;{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    &lt;div id=&quot;content&quot; class=&quot;{{ class }}&quot;&gt;{{ content_top }}
+      &lt;h2&gt;{{ heading_title }}&lt;/h2&gt;
+      {% if thumb or description %}
+      &lt;div class=&quot;row&quot;&gt; {% if thumb %}
+        &lt;div class=&quot;col-sm-2&quot;&gt;&lt;img src=&quot;{{ thumb }}&quot; alt=&quot;{{ heading_title }}&quot; title=&quot;{{ heading_title }}&quot; class=&quot;img-thumbnail&quot; /&gt;&lt;/div&gt;
+        {% endif %}
+        {% if description %}
+        &lt;div class=&quot;col-sm-10&quot;&gt;{{ description }}&lt;/div&gt;
+        {% endif %}&lt;/div&gt;
+      &lt;hr&gt;
+      {% endif %}
+      {% if categories %}
+      &lt;h3&gt;{{ text_refine }}&lt;/h3&gt;
+      {% if categories|length &lt;= 5 %}
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-3&quot;&gt;
+          &lt;ul&gt;
+            {% for category in categories %}
+            &lt;li&gt;&lt;a href=&quot;{{ category.href }}&quot;&gt;{{ category.name }}&lt;/a&gt;&lt;/li&gt;
+            {% endfor %}
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      {% else %}
+      &lt;div class=&quot;row&quot;&gt;{% for category in categories|batch((categories|length / 4)|round(1, 'ceil')) %}
+        &lt;div class=&quot;col-sm-3&quot;&gt;
+          &lt;ul&gt;
+            {% for child in category %}
+            &lt;li&gt;&lt;a href=&quot;{{ child.href }}&quot;&gt;{{ child.name }}&lt;/a&gt;&lt;/li&gt;
+            {% endfor %}
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        {% endfor %}&lt;/div&gt;
+      &lt;br /&gt;
+      {% endif %}
+      {% endif %}
+      {% if products %}
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-md-2 col-sm-6 hidden-xs&quot;&gt;
+          &lt;div class=&quot;btn-group btn-group-sm&quot;&gt;
+            &lt;button type=&quot;button&quot; id=&quot;list-view&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; title=&quot;{{ button_list }}&quot;&gt;&lt;i class=&quot;fa fa-th-list&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button type=&quot;button&quot; id=&quot;grid-view&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; title=&quot;{{ button_grid }}&quot;&gt;&lt;i class=&quot;fa fa-th&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 col-sm-6&quot;&gt;
+          &lt;div class=&quot;form-group&quot;&gt;&lt;a href=&quot;{{ compare }}&quot; id=&quot;compare-total&quot; class=&quot;btn btn-link&quot;&gt;{{ text_compare }}&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-4 col-xs-6&quot;&gt;
+          &lt;div class=&quot;form-group input-group input-group-sm&quot;&gt;
+            &lt;label class=&quot;input-group-addon&quot; for=&quot;input-sort&quot;&gt;{{ text_sort }}&lt;/label&gt;
+            &lt;select id=&quot;input-sort&quot; class=&quot;form-control&quot; onchange=&quot;location = this.value;&quot;&gt;
+              
+              
+              
+              {% for sorts in sorts %}
+              {% if sorts.value == '%s-%s'|format(sort, order) %}
+              
+              
+              
+              &lt;option value=&quot;{{ sorts.href }}&quot; selected=&quot;selected&quot;&gt;{{ sorts.text }}&lt;/option&gt;
+              
+              
+              
+              {% else %}
+              
+              
+              
+              &lt;option value=&quot;{{ sorts.href }}&quot;&gt;{{ sorts.text }}&lt;/option&gt;
+              
+              
+              
+              {% endif %}
+              {% endfor %}
+            
+            
+            
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
+          &lt;div class=&quot;form-group input-group input-group-sm&quot;&gt;
+            &lt;label class=&quot;input-group-addon&quot; for=&quot;input-limit&quot;&gt;{{ text_limit }}&lt;/label&gt;
+            &lt;select id=&quot;input-limit&quot; class=&quot;form-control&quot; onchange=&quot;location = this.value;&quot;&gt;
+              
+              
+              
+              {% for limits in limits %}
+              {% if limits.value == limit %}
+              
+              
+              
+              &lt;option value=&quot;{{ limits.href }}&quot; selected=&quot;selected&quot;&gt;{{ limits.text }}&lt;/option&gt;
+              
+              
+              
+              {% else %}
+              
+              
+              
+              &lt;option value=&quot;{{ limits.href }}&quot;&gt;{{ limits.text }}&lt;/option&gt;
+              
+              
+              
+              {% endif %}
+              {% endfor %}
+            
+            
+            
+            &lt;/select&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt; {% for product in products %}
+        &lt;div class=&quot;product-layout product-list col-xs-12&quot;&gt;
+          &lt;div class=&quot;product-thumb&quot;&gt;
+            &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;&lt;img src=&quot;{{ product.thumb }}&quot; alt=&quot;{{ product.name }}&quot; title=&quot;{{ product.name }}&quot; class=&quot;img-responsive&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;
+              &lt;div class=&quot;caption&quot;&gt;
+                &lt;h4&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;{{ product.name }}&lt;/a&gt;&lt;/h4&gt;
+                &lt;p&gt;{{ product.description }}&lt;/p&gt;
+                {% if product.price %}
+                &lt;p class=&quot;price&quot;&gt; {% if not product.special %}
+                  {{ product.price }}
+                  {% else %} &lt;span class=&quot;price-new&quot;&gt;{{ product.special }}&lt;/span&gt; &lt;span class=&quot;price-old&quot;&gt;{{ product.price }}&lt;/span&gt; {% endif %}
+                  {% if product.tax %} &lt;span class=&quot;price-tax&quot;&gt;{{ text_tax }} {{ product.tax }}&lt;/span&gt; {% endif %} &lt;/p&gt;
+                {% endif %}
+                {% if product.rating %}
+                &lt;div class=&quot;rating&quot;&gt; {% for i in 1..5 %}
+                  {% if product.rating &lt; i %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt; {% else %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt;{% endif %}
+                  {% endfor %} &lt;/div&gt;
+                {% endif %} &lt;/div&gt;
+              &lt;div class=&quot;button-group&quot;&gt;
+                &lt;button type=&quot;button&quot; onclick=&quot;cart.add('{{ product.product_id }}', '{{ product.minimum }}');&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;{{ button_cart }}&lt;/span&gt;&lt;/button&gt;
+                &lt;button type=&quot;button&quot; data-toggle=&quot;tooltip&quot; title=&quot;{{ button_wishlist }}&quot; onclick=&quot;wishlist.add('{{ product.product_id }}');&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                &lt;button type=&quot;button&quot; data-toggle=&quot;tooltip&quot; title=&quot;{{ button_compare }}&quot; onclick=&quot;compare.add('{{ product.product_id }}');&quot;&gt;&lt;i class=&quot;fa fa-exchange&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        {% endfor %} &lt;/div&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-sm-6 text-left&quot;&gt;{{ pagination }}&lt;/div&gt;
+        &lt;div class=&quot;col-sm-6 text-right&quot;&gt;{{ results }}&lt;/div&gt;
+      &lt;/div&gt;
+      {% endif %}
+      {% if not categories and not products %}
+      &lt;p&gt;{{ text_empty }}&lt;/p&gt;
+      &lt;div class=&quot;buttons&quot;&gt;
+        &lt;div class=&quot;pull-right&quot;&gt;&lt;a href=&quot;{{ continue }}&quot; class=&quot;btn btn-primary&quot;&gt;{{ button_continue }}&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      {% endif %}
+      {{ content_bottom }}&lt;/div&gt;
+    {{ column_right }}&lt;/div&gt;
+&lt;/div&gt;
+{{ footer }} 
