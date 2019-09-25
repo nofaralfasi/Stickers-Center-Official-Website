@@ -70,3 +70,307 @@ Stack trace:
 #3 /home2/nofar/public_html/admin/index.php(19): start('admin')
 #4 {main}
   thrown in /home2/nofar/public_html/system/library/db/mysqli.php on line 11
+[18-Aug-2019 23:22:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ControllerCommonFileManager::render() in /home2/nofar/public_html/admin/controller/common/filemanager.php:50
+Stack trace:
+#0 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonFileManager->index()
+#1 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#7 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home2/nofar/public_html/admin/controller/common/filemanager.php on line 50
+[18-Aug-2019 23:22:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ControllerCommonFileManager::render() in /home2/nofar/public_html/admin/controller/common/filemanager.php:50
+Stack trace:
+#0 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonFileManager->index()
+#1 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#7 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home2/nofar/public_html/admin/controller/common/filemanager.php on line 50
+[18-Aug-2019 23:22:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ControllerCommonFileManager::render() in /home2/nofar/public_html/admin/controller/common/filemanager.php:50
+Stack trace:
+#0 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonFileManager->index()
+#1 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#7 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home2/nofar/public_html/admin/controller/common/filemanager.php on line 50
+[18-Aug-2019 23:25:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ControllerCommonFileManager::render() in /home2/nofar/public_html/admin/controller/common/filemanager.php:50
+Stack trace:
+#0 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonFileManager->index()
+#1 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#3 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#4 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#5 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#6 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#7 /home2/nofar/public_html/admin/index.php(19): start('admin')
+#8 {main}
+  thrown in /home2/nofar/public_html/admin/controller/common/filemanager.php on line 50
+[08-Sep-2019 13:24:20 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:43
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(45): DB\MySQLi->query('INSERT INTO `oc...')
+#1 /home2/nofar/public_html/admin/controller/tool/backup.php(103): DB->query('INSERT INTO `oc...')
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerToolBackup->import()
+#3 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#8 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#9 /home2/nofar/public_html/admin/index.php(19): in /home2/nofar/public_html/system/library/db/mysqli.php on line 43
+[08-Sep-2019 13:33:37 UTC] PHP Fatal error:  Uncaught Exception: Error:  in /home2/nofar/public_html/system/library/db/mysqli.php:43
+Stack trace:
+#0 /home2/nofar/public_html/system/library/db.php(45): DB\MySQLi->query('INSERT INTO `oc...')
+#1 /home2/nofar/public_html/admin/controller/tool/backup.php(103): DB->query('INSERT INTO `oc...')
+#2 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerToolBackup->import()
+#3 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#4 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#5 /home2/nofar/public_html/system/engine/router.php(67): Action->execute(Object(Registry))
+#6 /home2/nofar/public_html/system/engine/router.php(56): Router->execute(Object(Action))
+#7 /home2/nofar/public_html/system/framework.php(165): Router->dispatch(Object(Action), Object(Action))
+#8 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu...')
+#9 /home2/nofar/public_html/admin/index.php(19): in /home2/nofar/public_html/system/library/db/mysqli.php on line 43
+[18-Sep-2019 22:03:48 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:04:25 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_filter_product.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/syste in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:04:29 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:11:44 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:11:59 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:15:05 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::__construct(), 0 passed in /home2/nofar/storage/modification/system/library/template.php on line 9 and exactly 1 expected in /home2/nofar/storage/modification/system/library/template/twig.php:13
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(9): Template\Twig->__construct()
+#1 /home2/nofar/storage/modification/system/engine/loader.php(121): Template->__construct('twig', Object(Registry))
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/marketplace/extension.php(51): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerMarketplaceE in /home2/nofar/storage/modification/system/library/template/twig.php on line 13
+[18-Sep-2019 22:15:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::__construct(), 0 passed in /home2/nofar/storage/modification/system/library/template.php on line 9 and exactly 1 expected in /home2/nofar/storage/modification/system/library/template/twig.php:13
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(9): Template\Twig->__construct()
+#1 /home2/nofar/storage/modification/system/engine/loader.php(121): Template->__construct('twig', Object(Registry))
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/common/login.php(79): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonLogin->index()
+ in /home2/nofar/storage/modification/system/library/template/twig.php on line 13
+[18-Sep-2019 22:15:56 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:18:05 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:19:35 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::render(), 2 passed in /home2/nofar/storage/modification/system/library/template.php on line 50 and exactly 3 expected in /home2/nofar/storage/modification/system/library/template/twig.php:18
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('common/header', '1')
+#1 /home2/nofar/storage/modification/system/engine/loader.php(128): Template->render('common/header', '1')
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/extension/module/tg_kspro_settings.php(579): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): Contr in /home2/nofar/storage/modification/system/library/template/twig.php on line 18
+[18-Sep-2019 22:19:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::render(), 2 passed in /home2/nofar/storage/modification/system/library/template.php on line 50 and exactly 3 expected in /home2/nofar/storage/modification/system/library/template/twig.php:18
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('common/header', '1')
+#1 /home2/nofar/storage/modification/system/engine/loader.php(128): Template->render('common/header', '1')
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/common/login.php(79): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonLogin->index in /home2/nofar/storage/modification/system/library/template/twig.php on line 18
+[18-Sep-2019 22:19:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::render(), 2 passed in /home2/nofar/storage/modification/system/library/template.php on line 50 and exactly 3 expected in /home2/nofar/storage/modification/system/library/template/twig.php:18
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('common/header', '1')
+#1 /home2/nofar/storage/modification/system/engine/loader.php(128): Template->render('common/header', '1')
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/common/login.php(79): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonLogin->index in /home2/nofar/storage/modification/system/library/template/twig.php on line 18
+[18-Sep-2019 22:20:30 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::render(), 2 passed in /home2/nofar/storage/modification/system/library/template.php on line 50 and exactly 3 expected in /home2/nofar/public_html/system/library/template/twig.php:18
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('common/header', '1')
+#1 /home2/nofar/storage/modification/system/engine/loader.php(128): Template->render('common/header', '1')
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/common/login.php(79): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonLogin->index()
+#7 /ho in /home2/nofar/public_html/system/library/template/twig.php on line 18
+[18-Sep-2019 22:20:32 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Template\Twig::render(), 2 passed in /home2/nofar/storage/modification/system/library/template.php on line 50 and exactly 3 expected in /home2/nofar/public_html/system/library/template/twig.php:18
+Stack trace:
+#0 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('common/header', '1')
+#1 /home2/nofar/storage/modification/system/engine/loader.php(128): Template->render('common/header', '1')
+#2 /home2/nofar/storage/modification/admin/controller/common/header.php(119): Loader->view('common/header', Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonHeader->index(Array)
+#4 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#5 /home2/nofar/public_html/admin/controller/common/login.php(79): Loader->controller('common/header')
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerCommonLogin->index()
+#7 /ho in /home2/nofar/public_html/system/library/template/twig.php on line 18
+[18-Sep-2019 22:21:06 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:21:13 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_filter_product.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/syste in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:21:36 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:22:21 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[18-Sep-2019 22:22:46 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[18-Sep-2019 22:22:51 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:23:41 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "extension/module/tg_kspro_settings.twig" (looked into: /home2/nofar/storage/modification/admin/view/template, /home2/nofar/public_html/admin/view/template). in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('extension/modul...')
+#1 /home2/nofar/public_html/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('extension/modul...')
+#2 /home2/nofar/public_html/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('extension/modul...', NULL)
+#3 /home2/nofar/storage/modification/system/library/template/twig.php(59): Twig_Environment->loadTemplate('extension/modul...')
+#4 /home2/nofar/storage/modification/system/library/template.php(50): Template\Twig->render('extension/modul...', '1')
+#5 /home2/nofar/storage/modification/system/engi in /home2/nofar/public_html/system/library/template/Twig/Loader/Filesystem.php on line 215
+[18-Sep-2019 22:30:58 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[19-Sep-2019 03:58:32 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[19-Sep-2019 10:45:22 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[19-Sep-2019 10:45:27 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/public_html/admin/controller/extension/extension/module.php(54): Loader->controller('extension/modul...')
+#4 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->uninstall()
+#5 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#6 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#7 /home2/nofar/storage/modification/system/ in /home2/nofar/storage/modification/system/engine/loader.php on line 89
+[19-Sep-2019 16:43:25 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home2/nofar/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home2/nofar/public_html/admin/controller/extension/module/d_security_module.php(27): Loader->model('extension/d_ope...')
+#1 /home2/nofar/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDSecurityModule->__construct(Object(Registry))
+#2 /home2/nofar/public_html/admin/controller/startup/router.php(26): Action->execute(Object(Registry), Array)
+#3 /home2/nofar/storage/modification/system/engine/action.php(79): ControllerStartupRouter->index()
+#4 /home2/nofar/storage/modification/system/engine/router.php(79): Action->execute(Object(Registry))
+#5 /home2/nofar/storage/modification/system/engine/router.php(68): Router->execute(Object(Action))
+#6 /home2/nofar/public_html/system/framework.php(171): Router->dispatch(Object(Action), Object(Action))
+#7 /home2/nofar/public_html/system/startup.php(104): require_once('/home2/nofar/pu... in /home2/nofar/storage/modification/system/engine/loader.php on line 89
