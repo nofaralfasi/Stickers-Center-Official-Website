@@ -8,6 +8,7 @@ $_['time_format']           = 'h:i:s A';
 $_['datetime_format']       = 'd/m/Y H:i:s';
 $_['decimal_point']         = '.';
 $_['thousand_point']        = ',';
+$_['store_name'] = 'Stickers-Center | ';
 
 // Text
 $_['text_home']             = '<i class="fa fa-home"></i>';
@@ -20,6 +21,25 @@ $_['text_pagination']       = 'Showing %d to %d of %d (%d Pages)';
 $_['text_loading']          = 'Loading...';
 $_['text_no_results']       = 'No results!';
 
+$_['text_secure']           = 'Secure Payments';
+$_['secure_desc']           = 'We use best-in-class technology to protect your transactions.';
+
+$_['text_free_shipping']           = 'Free Shipping';
+$_['free_shipping_desc']           = 'Free shipping on order over $75.';
+
+$_['text_support']           = 'Expert Customer Service';
+$_['support_desc']           = 'Our friendly team’s on hand seven days a week.';
+// $_['support_desc']           = 'We offer secure payments with SSL encryption.';
+
+$_['text_money_guarantee']           = 'Money Guarantee';
+$_['money_guarantee_desc']           = 'We want you to love your new room\'s look. If anything does not meet your expectations, please let us know. We\'ll make it right for you.';
+
+$_['text_eco_conscious']           = 'Eco-conscious';
+$_['eco_conscious_desc']           = 'We actively show concern for the environment and try to produce environmentally conscious whenever possible.';
+
+// $_['text_support']           = '';
+// $_['support_desc']           = '';
+
 // Buttons
 $_['button_address_add']    = 'Add Address';
 $_['button_back']           = 'Back';
@@ -27,7 +47,7 @@ $_['button_continue']       = 'Continue';
 $_['button_cart']           = 'Add to Cart';
 $_['button_cancel']         = 'Cancel';
 $_['button_compare']        = 'Compare this Product';
-$_['button_wishlist']       = 'Add to Wish List';
+$_['button_wishlist']       = 'Add to WishList';
 $_['button_checkout']       = 'Checkout';
 $_['button_confirm']        = 'Confirm Order';
 $_['button_coupon']         = 'Apply Coupon';
