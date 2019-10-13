@@ -1,11 +1,11 @@
 <?php
 // HTTP
 define('HTTP_SERVER', 'http://stickerscenter.org/admin/');
-define('HTTP_CATALOG', 'http://stickerscenter.org/');
+define('HTTP_CATALOG', 'https://www.stickerscenter.org/');
 
 // HTTPS
 define('HTTPS_SERVER', 'https://stickerscenter.org/admin/');
-define('HTTPS_CATALOG', 'https://stickerscenter.org/');
+define('HTTPS_CATALOG', 'https://www.stickerscenter.org/');
 
 // DIR
 define('DIR_APPLICATION', '/home2/nofar/public_html/admin/');
