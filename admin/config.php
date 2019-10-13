@@ -23,14 +23,14 @@ define('DIR_MODIFICATION', DIR_STORAGE . 'modification/');
 define('DIR_SESSION', DIR_STORAGE . 'session/');
 define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 
-// DB
+// DB - deleted for security 
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'nofar');
-define('DB_PASSWORD', 'R6p1UJt@2EVBAuR');
-define('DB_DATABASE', 'nofar_scdb');
+define('DB_USERNAME', '');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', '');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
 // OpenCart API
-define('OPENCART_SERVER', 'https://www.opencart.com/');
+
