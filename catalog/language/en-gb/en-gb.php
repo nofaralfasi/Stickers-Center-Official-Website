@@ -22,14 +22,15 @@ $_['text_loading']          = 'Loading...';
 $_['text_no_results']       = 'No results!';
 
 $_['text_secure']           = 'Secure Payments';
-$_['secure_desc']           = 'We use best-in-class technology to protect your transactions.';
+$_['secure_desc']           = 'We use secure payments with SSL encryption';
 
 $_['text_free_shipping']           = 'Free Shipping';
-$_['free_shipping_desc']           = 'Free shipping on order over $75.';
+$_['free_shipping_desc']           = 'Free shipping on order over $75';
 
 $_['text_support']           = 'Expert Customer Service';
-$_['support_desc']           = 'Our friendly team’s on hand seven days a week.';
+$_['support_desc']           = 'Our friendly team’s on hand 7 days a week';
 // $_['support_desc']           = 'We offer secure payments with SSL encryption.';
+// $_['secure_desc']           = 'We use best-in-class technology to protect your transactions.';
 
 $_['text_money_guarantee']           = 'Money Guarantee';
 $_['money_guarantee_desc']           = 'We want you to love your new room\'s look. If anything does not meet your expectations, please let us know. We\'ll make it right for you.';
@@ -37,8 +38,8 @@ $_['money_guarantee_desc']           = 'We want you to love your new room\'s loo
 $_['text_eco_conscious']           = 'Eco-conscious';
 $_['eco_conscious_desc']           = 'We actively show concern for the environment and try to produce environmentally conscious whenever possible.';
 
-// $_['text_support']           = '';
-// $_['support_desc']           = '';
+$_['text_disney']           = 'Disney';
+$_['text_butterflies']           = 'Butterflies';
 
 // Buttons
 $_['button_address_add']    = 'Add Address';
