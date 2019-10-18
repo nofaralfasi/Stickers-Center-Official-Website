@@ -14,4 +14,8 @@ $_['text_logout'] = 'התנתק';
 $_['text_checkout'] = 'לקופה';
 $_['text_search'] = 'חיפוש';
 $_['text_all'] = 'הצג הכל';
+$_['email']           = 'contact@stickerscenter.org';
+$_['opening_hours']           = 'ראשון - חמישי: 8:30 - 19:30';
+$_['telephone_num']           = '052-6205429';
 
+$_['store_name'] = 'המרכז למדבקות קיר | ';

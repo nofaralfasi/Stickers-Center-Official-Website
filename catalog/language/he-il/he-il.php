@@ -21,13 +21,13 @@ $_['text_pagination'] = 'מציג %d עד %d מתוך %d (%d עמודים)';
 $_['text_loading'] = 'טוען...';
 
 $_['text_secure'] = 'תשלום מאובטח';
-$_['secure_desc']           = 'אנו משתמשים בטכנולוגיה הטובה ביותר בשוק כדי להגן על העסקאות שלך.';
+$_['secure_desc']           = 'הקניה באתר מאובטחת בתקן SSL';
 
 $_['text_free_shipping']           = 'משלוחים חינם';
 $_['free_shipping_desc']           = 'משלוחים חינם עבור הזמנות מעל 198 ש"ח.';
 
 $_['text_support']           = 'שירות לקוחות';
-$_['support_desc']           = 'צוות המומחים של שירות הלקוחות שלנו עומד לרשותכם 7 ימים בשבוע.';
+$_['support_desc']           = 'צוות המומחים שלנו עומד לרשותכם 7 ימים בשבוע.';
 // $_['support_desc']           = 'We offer secure payments with SSL encryption.';
 
 $_['text_money_guarantee']           = 'שביעות רצון לקוחותינו';
@@ -38,6 +38,9 @@ $_['eco_conscious_desc']           = 'הסביבה חשובה לנו ואנו ד
 
 // $_['text_support']           = '';
 // $_['support_desc']           = '';
+
+$_['text_disney']           = 'דיסני';
+$_['text_butterflies']           = 'פרפרים';
 
 // Buttons
 $_['button_address_add'] = 'הוסף כתובת';
