@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'מוצרים מובילים';
+$_['heading_title'] = 'מומלצים';
 
 // Text
 $_['text_living_room'] = 'סלון';
@@ -17,3 +17,5 @@ $_['text_flowers'] = 'פרחים';
 $_['text_3d'] = 'תלת מימד';
 $_['text_tax']      = 'תשלומים נוספים:';
 $_['text_more']      = 'לפרטים >';
+
+$_['title'] = 'דף הבית';
