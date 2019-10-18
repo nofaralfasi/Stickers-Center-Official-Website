@@ -26,17 +26,16 @@
             {% endif %}
             {% if images %}
             {% for image in images %}
-            <li class="image-additional"><a class="thumbnail" href="{{ image.popup }}" title="{{ heading_title }}"> <img data-src="{{ image.thumb }}" title="{{ heading_title }}" class="lozad" alt="{{ heading_title }}" /></a></li>
-            {% endfor %}
-            {% endif %}
-          </ul>
-          {% endif %}
+            <li class="image-additional"><a class="thumbnail" href="{{ image.popup }}" title="{{ heading_title }}"><img data-src="{{ image.thumb }}" title="{{ heading_title }}" class="lozad" alt="{{ heading_title }}"/></a></li>
+            {% endfor %}{% endif %}
+          </ul>{% endif %}
+          <div> 
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab-description" data-toggle="tab">{{ tab_description }}</a></li>
             {% if attribute_groups %}
-            <li><a href="#tab-specification" data-toggle="tab">{{ tab_attribute }}</a></li>
-            {% endif %}
+            <li><a href="#tab-specification" data-toggle="tab">{{ tab_attribute }}</a></li>{% endif %}
           </ul>
+          </div>
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description">{{ description }}</div>
             {% if attribute_groups %}
@@ -55,18 +54,14 @@
                   <td>{{ attribute.text }}</td>
                 </tr>
                 {% endfor %}
-                  </tbody>
+                </tbody>
                 {% endfor %}
               </table>
-            </div>
-            {% endif %}
+            </div>{% endif %}
             </div>
           </div>
-        {% if column_left or column_right %}
-        {% set class = 'col-sm-6' %}
-        {% else %}
-        {% set class = 'col-sm-4' %}
-        {% endif %}
+        {% if column_left or column_right %}{% set class = 'col-sm-6' %}
+        {% else %}{% set class = 'col-sm-4' %}{% endif %}
         <div class="{{ class }}">
           <div class="btn-group">
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');"><i class="fa fa-heart"></i></button>
@@ -77,9 +72,7 @@
             <li>{{ text_manufacturer }} <a href="{{ manufacturers }}">{{ manufacturer }}</a></li>
             {% endif %}
             <li>{{ text_model }} {{ model }}</li>
-            {% if sku %}
             <li>{{ text_sku }} {{ sku }}</li>
-            {% endif %}
             <li>{{ text_stock }} {{ stock }}</li>
           </ul>
           {% if price %}
@@ -131,12 +124,12 @@
               <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}
                 <div class="radio">
                   <label>
-                    <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" />
+                    <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}"/>
                     {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}                  
                     {{ option_value.name }}
                     {% if option_value.price %}
                     ({{ option_value.price_prefix }}{{ option_value.price }})
-                    {% endif %} </label>
+                    {% endif %}</label>
                 </div>
                 {% endfor %} </div>
             </div>
@@ -161,21 +154,18 @@
             <div class="form-group{% if option.required %} required {% endif %}">
               <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
               <input type="text" name="option[{{ option.product_option_id }}]" value="{{ option.value }}" placeholder="{{ option.name }}" id="input-option{{ option.product_option_id }}" class="form-control" />
-            </div>
-            {% endif %}
+            </div>{% endif %}
             {% if option.type == 'textarea' %}
             <div class="form-group{% if option.required %} required {% endif %}">
               <label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
               <textarea name="option[{{ option.product_option_id }}]" rows="5" placeholder="{{ option.name }}" id="input-option{{ option.product_option_id }}" class="form-control">{{ option.value }}</textarea>
-            </div>
-            {% endif %}
-            {% endfor %}
-            {% endif %}
+            </div>{% endif %}
+            {% endfor %}{% endif %}
             <div class="form-group">
               <label class="control-label" for="input-quantity">{{ entry_qty }}</label>
-              <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" />
-              <input type="hidden" name="product_id" value="{{ product_id }}" />
-              <br />
+              <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control"/>
+              <input type="hidden" name="product_id" value="{{ product_id }}"/>
+              <br/>
               <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
             </div>
             {% if minimum > 1 %}
@@ -199,13 +189,18 @@
             <div class="image"><a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a></div>
             <div class="caption">
               <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-              <p>{{ product.description }}</p>
-              {% if product.price %}
-              <p class="price"> {% if not product.special %}
-                {{ product.price }}
-                {% else %} <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span> {% endif %}
-                {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %} </p>
-              {% endif %} </div>
+        {% if product.price %}
+        <p class="price">
+          {% if not product.special %}
+          {{ product.price }}
+          {% else %}
+          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+          {% endif %}
+          {% if product.tax %}
+          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+          {% endif %}</p>
+        {% endif %}
+            </div>
             <div class="button-group">
               <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span> <i class="fa fa-shopping-cart"></i></button>
               <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>

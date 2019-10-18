@@ -46,15 +46,6 @@
             {% endfor %}
           </select>
         </div>
-        <div class="col-sm-3">
-          <label class="checkbox-inline">
-            {% if sub_category %}
-            <input type="checkbox" name="sub_category" value="1" checked="checked" />
-            {% else %}
-            <input type="checkbox" name="sub_category" value="1" />
-            {% endif %}
-            {{ text_sub_category }}</label>
-        </div>
       </div>
       <p>
         <label class="checkbox-inline">
@@ -71,7 +62,6 @@
       <div class="row">
         <div class="col-md-2 col-sm-6 hidden-xs">
           <div class="btn-group btn-group-sm">
-            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="{{ button_list }}"><i class="fa fa-th-list"></i></button>
             <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="{{ button_grid }}"><i class="fa fa-th"></i></button>
           </div>
         </div>
@@ -112,7 +102,6 @@
             <div>
               <div class="caption">
                 <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                <p>{{ product.description }}</p>
                 {% if product.price %}
                 <p class="price">
                   {% if  not product.special %}
@@ -127,7 +116,7 @@
                 {% endif %}
               </div>
               <div class="button-group">
-                <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+                <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-sm hidden-md">{{ button_cart }}</span></button>
                 <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i></button>
               </div>
             </div>
