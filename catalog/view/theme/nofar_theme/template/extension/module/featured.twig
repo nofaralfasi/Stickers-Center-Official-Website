@@ -7,130 +7,130 @@
 
             <div class="item active">
                 {% for product in products[0:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
 
             <div class="item">
                 {% for product in products[4:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
 
             <div class="item">
                 {% for product in products[8:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
         </div>
@@ -151,7 +151,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="banner-info banner-info1">
                 <div class="inner">
-                    <img src="catalog/view/theme/nofar_theme/image/services_icos/returns.png" alt="{{ text_return }}" title="{{ text_return }}" class="lozad" />
+                    <img src="catalog/view/theme/nofar_theme/image/services_icos/returns.png" alt="{{ text_return }}" title="{{ text_return }}" class="lozad"/>
                     <div class="banner-cont">
                         <a href="#">{{ text_return }}</a>
                         <p>{{ return_desc }}</p>
@@ -162,7 +162,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="banner-info banner-info2">
                 <div class="inner">
-                    <img src="catalog/view/theme/nofar_theme/image/services_icos/shipping.png" alt="{{ text_free_shipping }}" title="{{ text_free_shipping }}" class="lozad" />
+                    <img src="catalog/view/theme/nofar_theme/image/services_icos/shipping.png" alt="{{ text_free_shipping }}" title="{{ text_free_shipping }}" class="lozad"/>
                     <div class="banner-cont">
                         <a href="#">{{ text_free_shipping }}</a>
                         <p>{{ free_shipping_desc }}</p>
@@ -173,7 +173,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="banner-info banner-info3">
                 <div class="inner">
-                    <img src="catalog/view/theme/nofar_theme/image/services_icos/support.png" alt="{{ text_service }}" title="{{ text_service }}" class="lozad" />
+                    <img src="catalog/view/theme/nofar_theme/image/services_icos/support.png" alt="{{ text_service }}" title="{{ text_service }}" class="lozad"/>
                     <div class="banner-cont">
                         <a href="#">{{ text_service }}</a>
                         <p>{{ service_desc }}</p>
@@ -184,7 +184,7 @@
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="banner-info banner-info4">
                 <div class="inner">
-                    <img src="catalog/view/theme/nofar_theme/image/services_icos/customer-support.png" alt="{{ text_secure }}" title="{{ text_secure }}" class="lozad" />
+                    <img src="catalog/view/theme/nofar_theme/image/services_icos/customer-support.png" alt="{{ text_secure }}" title="{{ text_secure }}" class="lozad"/>
                     <div class="banner-cont">
                         <a href="#">{{ text_secure }}</a>
                         <p>{{ secure_desc }}</p>
@@ -199,19 +199,19 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="images-group col-xs-12 col-sm-12 col-md-6 col-lg-3">
         <a href="https://www.stickerscenter.org/themes/cartoons">
-        <img data-src="catalog/view/theme/nofar_theme/image/Picture3.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad" /></a>
+            <img data-src="catalog/view/theme/nofar_theme/image/Picture3.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad"/></a>
     </div>
     <div class="images-group small col-xs-12 col-sm-12 col-md-6 col-lg-3">
         <a href="https://www.stickerscenter.org/themes/cartoons">
-        <img data-src="catalog/view/theme/nofar_theme/image/Picture4.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad" /></a>
+            <img data-src="catalog/view/theme/nofar_theme/image/Picture4.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad"/></a>
     </div>
-        <div class="images-group small col-xs-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="images-group small col-xs-12 col-sm-12 col-md-6 col-lg-3">
         <a href="https://www.stickerscenter.org/themes/cartoons">
-        <img data-src="catalog/view/theme/nofar_theme/image/yellow.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad" /></a>
+            <img data-src="catalog/view/theme/nofar_theme/image/yellow.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad"/></a>
     </div>
-        <div class="images-group col-xs-12 col-sm-12 col-md-6 col-lg-3">
+    <div class="images-group col-xs-12 col-sm-12 col-md-6 col-lg-3">
         <a href="https://www.stickerscenter.org/themes/cartoons">
-        <img data-src="catalog/view/theme/nofar_theme/image/Picture6.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad" /></a>
+            <img data-src="catalog/view/theme/nofar_theme/image/Picture6.png" alt="{{ text_disney }}" title="{{ text_disney }}" class="lozad"/></a>
     </div>
 </div>
 
@@ -223,132 +223,132 @@
     <div id="new-item-carousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
 
-            <div class="new-item active">
+            <div class="item active">
                 {% for product in products[20:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
 
-            <div class="new-item">
+            <div class="item">
                 {% for product in products[12:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
 
-            <div class="new-item">
+            <div class="item">
                 {% for product in products[16:4] %}
-                <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
-                    <div class="product-thumb transition">
+                        <div class="product-thumb transition">
 
-                        <div class="image">
-                            <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
-                        </div>
+                            <div class="image">
+                                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
+                            </div>
 
-                        <div class="caption">
-                            <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                            {% if product.price %}
-                            <p class="price">
-                                {% if not product.special %} {{ product.price }} {% else %}
-                                <span class="price-new">{{ product.special }}</span>
-                                <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
-                                <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
-                            </p>
-                            {% endif %}
-                        </div>
+                            <div class="caption">
+                                <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+                                {% if product.price %}
+                                    <p class="price">
+                                        {% if not product.special %} {{ product.price }} {% else %}
+                                            <span class="price-new">{{ product.special }}</span>
+                                            <span class="price-old">{{ product.price }}</span> {% endif %} {% if product.tax %}
+                                            <span class="price-tax">{{ text_tax }}{{ product.tax }}</span> {% endif %}
+                                    </p>
+                                {% endif %}
+                            </div>
 
-                        <div class="only-hover">
-                            <ul>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
-                                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="Quickview"><i class="fa fa-eye"></i></a></li>
-                            </ul>
-                        </div>
+                            <div class="only-hover">
+                                <ul>
+                                    <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
 
-                        <div class="button-wrap">
-                            <ul>
-                                <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
-                                            class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
-                            </ul>
+                            <div class="button-wrap">
+                                <ul>
+                                    <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i
+                                                    class="fa fa-shopping-cart"></i><span>Add To Cart</span></a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </div>
-
-                </div>
                 {% endfor %}
             </div>
         </div>
@@ -366,7 +366,7 @@
 
 <script type="text/javascript">
     <!--
-    $(document).ready(function() {
+    $(document).ready(function () {
         const observer = lozad();
         observer.observe();
     });
