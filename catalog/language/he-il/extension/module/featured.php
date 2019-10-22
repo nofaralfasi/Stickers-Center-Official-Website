@@ -19,3 +19,7 @@ $_['text_tax']      = 'תשלומים נוספים:';
 $_['text_more']      = 'לפרטים >';
 
 $_['title'] = 'דף הבית';
+
+$_['text_home_accessories']      = 'אביזרים לבית';
+$_['text_animals']      = 'חיות';
+$_['text_canvas']      = 'קנבס';
