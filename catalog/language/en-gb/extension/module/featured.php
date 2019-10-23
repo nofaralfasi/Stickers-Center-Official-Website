@@ -1,6 +1,8 @@
 <?php
 // Heading
+$_['meta_title'] = 'Home';
 $_['heading_title'] = 'Featured';
+$_['new_products'] = 'New Products';
 
 // Text
 $_['text_living_room'] = 'Living room';
@@ -27,7 +29,6 @@ $_['text_canvas_desc']      = 'Canvas';
 $_['text_wallpapers_desc']      = 'Wallpapers';
 $_['text_wall_stickers_desc']      = 'Wall Stickers';
 
-// $_['text_'] = '';
 $_['text_tax']      = 'Ex Tax:';
 $_['text_more']      = 'More >';
 
