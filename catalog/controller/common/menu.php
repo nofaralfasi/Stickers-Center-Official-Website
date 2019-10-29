@@ -40,6 +40,16 @@ class ControllerCommonMenu extends Controller {
 				);
 			}
 		}
+		$data['lang'] = $this->language->get('code');
+		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
+			if ($data['lang'] == 'en') {
+				$data['logo'] = 'https://www.stickerscenter.org/image/catalog/logos/logo-en.png';
+			} else {
+				$data['logo'] = 'https://www.stickerscenter.org/image/' . $this->config->get('config_logo');
+			}
+		} else {
+			$data['logo'] = '';
+		}
 
 		return $this->load->view('common/menu', $data);
 	}
