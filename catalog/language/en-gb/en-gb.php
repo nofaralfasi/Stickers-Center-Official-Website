@@ -38,9 +38,6 @@ $_['money_guarantee_desc']           = 'We want you to love your new room\'s loo
 $_['text_eco_conscious']           = 'Eco-conscious';
 $_['eco_conscious_desc']           = 'We actively show concern for the environment and try to produce environmentally conscious whenever possible.';
 
-$_['text_disney']           = 'Disney';
-$_['text_butterflies']           = 'Butterflies';
-
 // Buttons
 $_['button_address_add']    = 'Add Address';
 $_['button_back']           = 'Back';

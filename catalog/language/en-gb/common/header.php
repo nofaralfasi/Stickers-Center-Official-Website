@@ -16,4 +16,4 @@ $_['text_search']        = 'Search';
 $_['text_all']           = 'Show All';
 $_['email']           = 'contact@stickerscenter.org';
 $_['opening_hours']           = 'Sun-Thurs: 8:30 - 19:30';
-$_['telephone_num']           = '972-526205429';
+$_['telephone_num']           = '+972-526205429';
