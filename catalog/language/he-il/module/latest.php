@@ -1,7 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'האחרונה';
+$_['heading_title'] = 'Latest';
 
 // Text
-$_['text_tax'] = 'המחיר ללא מס:';
-
+$_['text_tax']      = 'Ex Tax:';

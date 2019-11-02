@@ -1,22 +1,23 @@
 <?php
 // Heading
-$_['heading_title']     = 'Product Comparison';
+$_['heading_title'] = 'השוואת';
 
 // Text
-$_['text_product']      = 'Product Details';
-$_['text_name']         = 'Product';
-$_['text_image']        = 'Image';
-$_['text_price']        = 'Price';
-$_['text_model']        = 'Model';
-$_['text_manufacturer'] = 'Brand';
-$_['text_availability'] = 'Availability';
-$_['text_instock']      = 'In Stock';
-$_['text_rating']       = 'Rating';
-$_['text_reviews']      = 'Based on %s reviews.';
-$_['text_summary']      = 'Summary';
-$_['text_weight']       = 'Weight';
-$_['text_dimension']    = 'Dimensions (L x W x H)';
-$_['text_compare']      = 'Product Compare (%s)';
-$_['text_success']      = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">product comparison</a>!';
-$_['text_remove']       = 'Success: You have modified your product comparison!';
-$_['text_empty']        = 'You have not chosen any products to compare.';
+$_['text_product'] = 'פרטי המוצר';
+$_['text_name'] = 'מוצר';
+$_['text_image'] = 'תמונה';
+$_['text_price'] = 'מחיר';
+$_['text_model'] = 'דגם';
+$_['text_manufacturer'] = 'מותג';
+$_['text_availability'] = 'זמינות';
+$_['text_instock'] = 'במלאי';
+$_['text_rating'] = 'דירוג';
+$_['text_reviews'] = 'מבוסס על %s חוות דעת.';
+$_['text_summary'] = 'סיכום';
+$_['text_weight'] = 'משקל';
+$_['text_dimension'] = 'מידות (L x ר x ג)';
+$_['text_compare'] = 'מוצר להשוואה (%s)';
+$_['text_success'] = 'הצלחה: שהוספת <a href="%s"> %s</a> שלך <a href="%s"> השוואת</a>!';
+$_['text_remove'] = 'הצלחה: שינוי השוואה המוצר שלך!';
+$_['text_empty'] = 'לא בחרת כל המוצרים כדי להשוות.';
+

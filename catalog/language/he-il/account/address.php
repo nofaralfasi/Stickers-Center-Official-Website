@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'פנקס הכתובות';
+$_['heading_title'] = 'רשימת הכתובות';
 
 // Text
 $_['text_account'] = 'חשבון';

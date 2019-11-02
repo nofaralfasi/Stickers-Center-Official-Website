@@ -1,4 +1,3 @@
 <?php
 // Heading
-$_['heading_title'] = 'קטגוריות';
-
+$_['heading_title'] = 'תפריט';

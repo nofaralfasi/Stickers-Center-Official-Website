@@ -1,8 +1,9 @@
 <?php
 // Text
-$_['text_upload']    = 'Your file was successfully uploaded!';
+$_['text_upload'] = 'הקובץ הועלה בהצלחה!';
 
 // Error
-$_['error_filename'] = 'Filename must be between 3 and 64 characters!';
-$_['error_filetype'] = 'Invalid file type!';
-$_['error_upload']   = 'Upload required!';
+$_['error_filename'] = 'שם הקובץ חייב להיות בין 3 ל 64 תווים!';
+$_['error_filetype'] = 'סוג קובץ לא חוקי!';
+$_['error_upload'] = 'נדרשת העלאת קובץ!';
+

@@ -1,3 +1,3 @@
 <?php
-$_['text_total'] = 'סה"כ';
-
+// Text
+$_['text_total'] = 'Total';

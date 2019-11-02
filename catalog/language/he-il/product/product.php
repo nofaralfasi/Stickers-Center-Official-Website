@@ -1,50 +1,54 @@
 <?php
 // Text
-$_['text_search']              = 'Search';
-$_['text_brand']               = 'Brand';
-$_['text_manufacturer']        = 'Brand:';
-$_['text_model']               = 'Product Code:';
-$_['text_reward']              = 'Reward Points:';
-$_['text_points']              = 'Price in reward points:';
-$_['text_stock']               = 'Availability:';
-$_['text_instock']             = 'In Stock';
-$_['text_tax']                 = 'Ex Tax:';
-$_['text_discount']            = ' or more ';
-$_['text_option']              = 'Available Options';
-$_['text_minimum']             = 'This product has a minimum quantity of %s';
-$_['text_reviews']             = '%s reviews';
-$_['text_write']               = 'Write a review';
-$_['text_login']               = 'Please <a href="%s">login</a> or <a href="%s">register</a> to review';
-$_['text_no_reviews']          = 'There are no reviews for this product.';
-$_['text_note']                = '<span class="text-danger">Note:</span> HTML is not translated!';
-$_['text_success']             = 'Thank you for your review. It has been submitted to the webmaster for approval.';
-$_['text_related']             = 'Related Products';
-$_['text_tags']                = 'Tags:';
-$_['text_error']               = 'Product not found!';
-$_['text_payment_recurring']   = 'Payment Profile';
-$_['text_trial_description']   = '%s every %d %s(s) for %d payment(s) then';
-$_['text_payment_description'] = '%s every %d %s(s) for %d payment(s)';
-$_['text_payment_cancel']      = '%s every %d %s(s) until canceled';
-$_['text_day']                 = 'day';
-$_['text_week']                = 'week';
-$_['text_semi_month']          = 'half-month';
-$_['text_month']               = 'month';
-$_['text_year']                = 'year';
+$_['text_search'] = 'חיפוש';
+$_['text_brand'] = 'מותג';
+$_['text_manufacturer'] = 'מותג:';
+$_['text_model'] = 'קוד מוצר:';
+$_['text_reward'] = 'נקודות מצטברות:';
+$_['text_points'] = 'מחיר נקודות מצטברות:';
+$_['text_stock'] = 'זמינות:';
+$_['text_instock'] = 'במלאי';
+$_['text_tax'] = 'ללא מס:';
+$_['text_discount'] = ' או יותר ';
+$_['text_option'] = 'אפשרויות זמינות';
+$_['text_minimum'] = 'למוצר זה כמות מינימלית של %s';
+$_['text_reviews'] = '%s ביקורות';
+$_['text_write'] = 'כתיבת ביקורת';
+$_['text_login'] = 'יש <a href="%s">להתחבר</a> או <a href="%s">להירשם</a> כדי לכתוב ביקורת';
+$_['text_no_reviews'] = 'אין ביקורות למוצר זה.';
+$_['text_note'] = '<span class="text-danger"> הערה:</span> HTML לא מתורגם!';
+$_['text_success'] = 'תודה על הביקורת שלך, היא הוגשה למערכת לאישור.';
+$_['text_related'] = 'מוצרים קשורים';
+$_['text_tags'] = 'תגיות:';
+$_['text_error'] = 'מוצר לא נמצא!';
+$_['text_payment_recurring'] = 'פרופילי תשלום';
+$_['text_trial_description'] = '%s כל %s(s) %d על %d payment(s) אז';
+$_['text_payment_description'] = '%s כל %s(s) %d על %d payment(s)';
+$_['text_payment_until_canceled_description'] = 'בוטלה כל %s(s) %d עד %s';
+$_['text_day'] = 'יום';
+$_['text_week'] = 'שבוע';
+$_['text_semi_month'] = 'חצי חודש';
+$_['text_month'] = 'חודש';
+$_['text_year'] = 'שנה';
+$_['text_details']      = 'צפיה בפריט';
 
 // Entry
-$_['entry_qty']                = 'Qty';
-$_['entry_name']               = 'Your Name';
-$_['entry_review']             = 'Your Review';
-$_['entry_rating']             = 'Rating';
-$_['entry_good']               = 'Good';
-$_['entry_bad']                = 'Bad';
+$_['entry_qty'] = 'כמות';
+$_['entry_name'] = 'השם שלך';
+$_['entry_review'] = 'הביקורת שלך';
+$_['entry_rating'] = 'דירוג';
+$_['entry_good'] = 'טוב';
+$_['entry_bad'] = 'רע';
+$_['entry_captcha'] = 'הזן את הקוד בתיבה שלהלן';
 
 // Tabs
-$_['tab_description']          = 'Description';
-$_['tab_attribute']            = 'Specification';
-$_['tab_review']               = 'Reviews (%s)';
+$_['tab_description'] = 'תיאור';
+$_['tab_attribute'] = 'מפרט';
+$_['tab_review'] = 'ביקורות (%s)';
 
 // Error
-$_['error_name']               = 'Warning: Review Name must be between 3 and 25 characters!';
-$_['error_text']               = 'Warning: Review Text must be between 25 and 1000 characters!';
-$_['error_rating']             = 'Warning: Please select a review rating!';
+$_['error_name'] = 'אזהרה: סקירה שם חייב להיות בין 3 ל 25 תווים!';
+$_['error_text'] = 'אזהרה: סקירה טקסט חייב להיות בין 25 ל- 1000 תווים!';
+$_['error_rating'] = 'אזהרה: נא בחר דירוג סקירה!';
+$_['error_captcha'] = 'אזהרה: קוד אימות לא תואמת את התמונה!';
+

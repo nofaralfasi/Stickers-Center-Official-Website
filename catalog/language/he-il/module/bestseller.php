@@ -1,7 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'הנמכרים ביותר';
+$_['heading_title'] = 'נמכרים ביותר';
 
 // Text
-$_['text_tax'] = 'המחיר ללא מס:';
-
+$_['text_tax']      = 'Ex Tax:';

@@ -1,3 +1,3 @@
 <?php
-$_['text_sub_total'] = 'סך מחיר פריטים';
-
+// Text
+$_['text_sub_total'] = 'Sub-Total';

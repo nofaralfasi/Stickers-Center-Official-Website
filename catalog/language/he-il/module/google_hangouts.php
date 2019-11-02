@@ -1,4 +1,3 @@
 <?php
 // Heading
-$_['heading_title'] = 'צ\'אט חי';
-
+$_['heading_title'] = 'Live Chat';

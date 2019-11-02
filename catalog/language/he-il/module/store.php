@@ -1,8 +1,7 @@
 <?php
 // Heading
-$_['heading_title'] = 'בחרו חנות';
+$_['heading_title'] = 'Choose a Store';
 
 // Text
-$_['text_default'] = 'ברירת מחדל';
-$_['text_store'] = 'נא בחרו את החנות שתרצו לבקר.';
-
+$_['text_default']  = 'Default';
+$_['text_store']    = 'Please choose the store you wish to visit.';

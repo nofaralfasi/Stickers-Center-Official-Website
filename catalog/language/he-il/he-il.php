@@ -28,19 +28,12 @@ $_['free_shipping_desc']           = 'משלוחים חינם עבור הזמנ�
 
 $_['text_support']           = 'שירות לקוחות';
 $_['support_desc']           = 'צוות המומחים שלנו עומד לרשותכם 7 ימים בשבוע.';
-// $_['support_desc']           = 'We offer secure payments with SSL encryption.';
 
 $_['text_money_guarantee']           = 'שביעות רצון לקוחותינו';
 $_['money_guarantee_desc']           = 'אנו רואנו רוצים שתאהב את המראה החדש של חדרך. אם משהו לא עומד בציפיות שלך, אנא הודע לנו. אנו נדאג לתקן זאת עבורך.';
 
 $_['text_eco_conscious']           = 'מוצרים ידידותיים לסביבה';
 $_['eco_conscious_desc']           = 'הסביבה חשובה לנו ואנו דואגים שכל מוצרינו יהיו ידידותיים לסביבה.';
-
-// $_['text_support']           = '';
-// $_['support_desc']           = '';
-
-$_['text_disney']           = 'דיסני';
-$_['text_butterflies']           = 'פרפרים';
 
 // Buttons
 $_['button_address_add'] = 'הוסף כתובת';
