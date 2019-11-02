@@ -1,0 +1,140 @@
+.fa,.fab,.fal,.far,.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1
+}
+.fa-angellist:before {
+  content: "\f209"
+}
+.fa-angle-double-down:before {
+  content: "\f103"
+}
+.fa-angle-double-left:before {
+  content: "\f100"
+}
+.fa-angle-double-right:before {
+  content: "\f101"
+}
+.fa-angle-double-up:before {
+  content: "\f102"
+}
+.fa-angle-down:before {
+  content: "\f107"
+}
+.fa-angle-left:before {
+  content: "\f104"
+}
+.fa-angle-right:before {
+  content: "\f105"
+}
+.fa-angle-up:before {
+  content: "\f106"
+}
+.fa-envelope:before {
+  content: "\f0e0"
+}
+.fa-envelope-open:before {
+  content: "\f2b6"
+}
+.fa-envelope-open-text:before {
+  content: "\f658"
+}
+.fa-envelope-square:before {
+  content: "\f199"
+}
+.fa-eye:before {
+  content: "\f06e"
+}
+.fa-eye-dropper:before {
+  content: "\f1fb"
+}
+.fa-eye-slash:before {
+  content: "\f070"
+}
+.fa-facebook:before {
+  content: "\f09a"
+}
+.fa-facebook-f:before {
+  content: "\f39e"
+}
+.fa-facebook-messenger:before {
+  content: "\f39f"
+}
+.fa-facebook-square:before {
+  content: "\f082"
+}
+.fa-google-plus-g:before {
+  content: "\f0d5"
+}
+.fa-heart:before {
+  content: "\f004"
+}
+.fa-instagram:before {
+  content: "\f16d"
+}
+.fa-mobile:before {
+  content: "\f10b"
+}
+.fa-phone:before {
+  content: "\f095"
+}
+.fa-shopping-bag:before {
+  content: "\f290"
+}
+.fa-shopping-basket:before {
+  content: "\f291"
+}
+.fa-shopping-cart:before {
+  content: "\f07a"
+}
+.fa-user:before {
+  content: "\f007"
+}
+.fa-twitter:before {
+  content: "\f099"
+}
+.fa-twitter-square:before {
+  content: "\f081"
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: normal;
+  font-display:auto;src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+.fab {
+  font-family: "Font Awesome 5 Brands"
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display:auto;src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+.far {
+  font-weight: 400
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display:auto;src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.eot);
+  src: url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.7.0/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+.fa,.far,.fas {
+  font-family: "Font Awesome 5 Free"
+}
+.fa,.fas {
+  font-weight: 900
+}
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d";
+}
