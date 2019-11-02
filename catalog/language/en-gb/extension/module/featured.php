@@ -18,6 +18,15 @@ $_['text_butterflies'] = 'Butterflies';
 $_['text_flowers'] = 'Flowers';
 $_['text_3d'] = '3D';
 
+$_['text_disney']           = 'Disney';
+$_['text_butterflies']           = 'Butterflies';
+$_['text_cartoons']           = 'Cartoons';
+
+$_['text_canvas_img']           = 'catalog/view/theme/nofar_theme/image/canvas.png';
+$_['text_butterflies_img']           = 'catalog/view/theme/nofar_theme/image/butterflies.png';
+$_['text_cartoons_img']           = 'catalog/view/theme/nofar_theme/image/cartoons.jpg';
+
+
 $_['text_home_accessories']      = 'Home Accessories';
 $_['text_animals']      = 'Animals';
 
@@ -31,6 +40,7 @@ $_['text_wall_stickers_desc']      = 'Wall Stickers';
 
 $_['text_tax']      = 'Ex Tax:';
 $_['text_more']      = 'More >';
+$_['text_details']      = 'Details';
 
 $_['text_secure']           = 'SAFE SHOPPING';
 $_['secure_desc']           = 'guarantee';
