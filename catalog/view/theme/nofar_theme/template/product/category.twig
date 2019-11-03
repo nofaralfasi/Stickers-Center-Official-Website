@@ -13,7 +13,9 @@
         {% else %}
             {% set class = 'col-sm-12' %}
         {% endif %}
-        <div id="content" class="{{ class }}">{{ content_top }}
+        
+        <div id="content" class="{{ class }}">
+            {{ content_top }}
             <h2>{{ heading_title }}</h2>
             {% if thumb or description %}
                 <div class="row">
@@ -53,16 +55,17 @@
                     <br>
                 {% endif %}
             {% endif %}
+            
+            <br>
+            
             {% if products %}
-                <div class="row">
-                    <div class="col-md-2 col-sm-6 hidden-xs">
+                <div id="list-opt" class="row">
+                    <div class="col-md-1 col-sm-1 hidden">
                         <div class="btn-group btn-group-sm">
-                            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="{{ button_grid }}">
-                                <i class="fa fa-th"></i>
-                            </button>
+                            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="{{ button_grid }}"><i class="fa fa-th"></i></button>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-6">
+                    <div class="col-md-5 col-xs-7">
                         <div class="form-group input-group input-group-sm">
                             <label class="input-group-addon" for="input-sort">{{ text_sort }}</label>
                             <select id="input-sort" class="form-control" onchange="location = this.value;">
@@ -76,7 +79,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-md-3 col-xs-5">
                         <div class="form-group input-group input-group-sm">
                             <label class="input-group-addon" for="input-limit">{{ text_limit }}</label>
                             <select id="input-limit" class="form-control" onchange="location = this.value;">
@@ -91,39 +94,50 @@
                         </div>
                     </div>
                 </div>
+                
+                <br>
+                
                 <div class="row">
                     {% for product in products %}
-                        <div class="product-layout product-list col-xs-12">
-                            <div class="product-thumb">
-                                <div class="image">
-                                    <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad"/></a>
-                                </div>
-                                <div>
-                                    <div class="caption">
-                                        <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-                                        {% if product.price %}
-                                            <p class="price">
-                                                {% if not product.special %}{{ product.price }}
-                                                {% else %}
-                                                    <span class="price-new">{{ product.special }}</span>
-                                                    <span class="price-old">{{ product.price }}</span>
-                                                {% endif %}
-                                                {% if product.tax %}<span class="price-tax">{{ text_tax }}{{ product.tax }}</span>
-                                                {% endif %}
-                                            </p>{% endif %}
-                                    </div>
-                                    <div class="button-group">
-                                        <button type="button" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');">
-                                            <i class="fa fa-shopping-cart"></i>
-                                            <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span>
-                                        </button>
-                                        <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');">
-                                            <i class="fa fa-heart"></i>
-                                        </button>                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
+   <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image">
+                <a href="{{ product.href }}"><img data-src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="lozad" /></a>
+            </div>
+            <div class="caption">
+              <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
+        {% if product.price %}
+        <p class="price">
+          {% if not product.special %}
+          {{ product.price }}
+          {% else %}
+          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+          {% endif %}
+          {% if product.tax %}
+          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+          {% endif %}</p>
+        {% endif %}
+            </div>
+            
+        <div class="only-hover">
+            <ul>
+                <li><a onclick="wishlist.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_wishlist }}"><i class="fa fa-heart-o"></i></a></li>
+                <li><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="{{ product.href }}" data-toggle="tooltip" title="Details"><i class="fa fa-eye"></i></a></li>
+            </ul>
+        </div>
+                   
+        <div class="button-wrap">
+        <ul>
+            <li class="add-to-cart-btn"><a onclick="cart.add('{{ product.product_id }}');" data-toggle="tooltip" title="{{ button_cart }}">
+                <i class="fa fa-shopping-cart"></i><span>{{ button_cart }}</span></a></li>
+            </ul>
+        </div>
+                            
+          </div>
+        </div>
+        
                     {% endfor %}
                 </div>
                 <div class="row">
@@ -143,9 +157,3 @@
         {{ column_right }}</div>
 </div>
 {{ footer }}
-<script type="text/javascript"><!--
-$(document).ready(function() {
-    const observer = lozad();
-    observer.observe();
-});
-//--></script> 

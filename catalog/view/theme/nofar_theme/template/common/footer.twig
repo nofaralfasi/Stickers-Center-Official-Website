@@ -1,40 +1,89 @@
-<footer>
-  <div class="container">
+ <footer>
     <div class="row">
-      {% if informations %}
-      <div class="col-sm-3">
-        <h5>{{ text_information }}</h5>
-        <ul class="list-unstyled">
-         {% for information in informations %}
-          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      <div class="col-sm-3">
-        <h5>{{ text_service }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-          <li><a href="{{ return }}">{{ text_return }}</a></li>
-          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5>{{ text_account }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ account }}">{{ text_account }}</a></li>
-          <li><a href="{{ order }}">{{ text_order }}</a></li>
-          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=stickerscenter.org','SiteLock','width=600,height=600,left=160,top=170');" ><img class="img-responsive" alt="SiteLock" title="SiteLock" src="//shield.sitelock.com/shield/stickerscenter.org" /></a>
-  </div>
+        <div class="col-sm-3 col-xs-10 footer-1"> 
+    	    <h5 class="footer-title">{{ text_connect }}</h5>
+    		<ul class="list-unstyled connect-with-us">
+        		<li><a href="https://www.facebook.com/madbekot.comp/"><i class="fa fa-facebook"></i><span>{{ text_facebook }}</span></a></li>
+        		<li><a href="https://twitter.com/stickers_center?lang=he"><i class="fa fa-twitter"></i><span>{{ text_twitter }}</span></a></li>
+        		<li><a href="https://www.instagram.com/stickers_center_israel/"><i class="fa fa-instagram"></i><span>{{ text_instagram }}</span></a></li>
+                <li><a href="{{ contact }}"><i class="fa fa-mobile"></i><span>{{ text_contact }}</span></a></li>
+    		</ul>																																																																															
+    	</div>
+    	{% if informations %}
+          <div class="col-sm-2 col-xs-6 footer-2">
+            <h5>{{ text_information }}</h5>
+            <ul class="list-unstyled">
+             {% for information in informations %}
+              <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+          <div class="col-sm-2 col-xs-6 footer-2">
+            <h5>{{ text_account }}</h5>
+            <ul class="list-unstyled">
+              <li><a href="{{ account }}">{{ text_account }}</a></li>
+              <li><a href="{{ order }}">{{ text_order }}</a></li>
+              <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+               <li><a href="{{ return }}">{{ text_return }}</a></li>
+            </ul>
+          </div>
+      	<div class="col-sm-4 col-xs-12 footer-4">
+		<ul class="list-unstyled connect-with-us">
+		    <img data-src="{{ secure_image }}" class="img-responsive lozad"/>
+		</ul>																																																																															
+	</div>
+
+
+    <div class="row">  
+        <hr>
+        <div class="col-sm-12 sitelock-img">
+            <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=stickerscenter.org','SiteLock','width=600,height=600,left=160,top=170');" ><img class="img-responsive lozad" alt="SiteLock" title="SiteLock" data-src="//shield.sitelock.com/shield/stickerscenter.org" /></a>
+        </div>
+    </div> 
+</div>
+
 </footer>
+
 {% for script in scripts %}
-<script src="{{ script }}" type="text/javascript"></script>
+  <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        const observer = lozad();
+        observer.observe();
+        
+        if( window.innerWidth < 768 ) {
+            var theScript = document.createElement('script');
+                theScript.type = 'text/javascript';
+                theScript.src = 'catalog/view/javascript/js/mdb.min.js';
+    
+            var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(theScript, s);
+        }        
+    });
+    function openNav() {
+        document.getElementById("slide-out").style.transition = "all 1s";
+        {% if direction == 'rtl' %}
+            document.getElementById("slide-out").style.width = "20rem";
+            document.getElementById("slide-out").style.right = "20rem";
+        {% else %}
+            document.getElementById("slide-out").style.width = "15rem";
+            document.getElementById("slide-out").style.left = "15rem";
+        {% endif %}
+        document.getElementById("sidenav-overlay").style.width = "900px";
+    }
+    function closeNav() {
+        document.getElementById("slide-out").style.width = "0";
+        document.getElementById("sidenav-overlay").style.width = "0";
+        {% if direction == 'rtl' %}
+            document.getElementById("slide-out").style.right = "0";
+        {% else %}
+            document.getElementById("slide-out").style.left = "0";
+        {% endif %}
+    }
+</script>
+
+<div id="sidenav-overlay" onclick="closeNav()" style="width: 0;"></div>
 </body></html>
