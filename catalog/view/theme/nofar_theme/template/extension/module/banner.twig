@@ -4,11 +4,11 @@
         {% for banner in banners %}
           <div class="swiper-slide">
               {% if banner.link %}
-          <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>
-          {% else %}
-          <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
-          {% endif %}</div>
-      {% endfor %}</div>
+          <a href="{{ banner.link }}"><img data-src="{{ banner.image }}" alt="{{ banner.title }}" title="{{ banner.title }}" class="img-responsive lozad" /></a>
+            {% else %}
+            <img data-src="{{ banner.image }}" alt="{{ banner.title }}" title="{{ banner.title }}" class="img-responsive lozad" />
+            {% endif %}</div>
+        {% endfor %}</div>
   </div>
 </div>
 <script type="text/javascript"><!--
