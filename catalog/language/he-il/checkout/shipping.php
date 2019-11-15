@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title'] = 'מיסים ומשלוח הערכה';
+$_['heading_title'] = 'הערכת עלות משלוח ומיסים ';
 
 // Text
 $_['text_success'] = 'הצלחה: הערכת משלוח הוחל!';

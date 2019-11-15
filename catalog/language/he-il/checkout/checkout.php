@@ -3,7 +3,7 @@
 $_['heading_title'] = 'תשלום';
 
 // Text
-$_['text_cart'] = 'עגלת קניות';
+$_['text_cart'] = 'סל קניות';
 $_['text_checkout_option'] = 'שלב 1: בחירת חשבון';
 $_['text_checkout_account'] = 'שלב 2: פרטי חשבון וחיוב';
 $_['text_checkout_payment_address'] = 'שלב 2: פרטי חיוב';
@@ -15,7 +15,7 @@ $_['text_modify'] = 'עדכון »';
 $_['text_new_customer'] = 'לקוח חדש';
 $_['text_returning_customer'] = 'לקוח חוזר';
 $_['text_checkout'] = 'אפשרויות התשלום:';
-$_['text_i_am_returning_customer'] = 'אני לקוח חוזר';
+$_['text_i_am_returning_customer'] = 'לקוח קיים';
 $_['text_register'] = 'רישום חשבון חדש';
 $_['text_guest'] = 'המשך כאורח';
 $_['text_register_account'] = 'על ידי יצירת חשבון תוכל לקנות מהר יותר, להיות מעודכן במצב ההזמנה שלך ולעקוב אחרי הזמנות קודמות.';

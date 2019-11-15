@@ -1,6 +1,8 @@
 <?php
 // Heading
+$_['meta_title'] = 'דף הבית';
 $_['heading_title'] = 'מומלצים';
+$_['new_products'] = 'חדשים באתר';
 
 // Text
 $_['text_living_room'] = 'סלון';
@@ -17,9 +19,43 @@ $_['text_flowers'] = 'פרחים';
 $_['text_3d'] = 'תלת מימד';
 $_['text_tax']      = 'תשלומים נוספים:';
 $_['text_more']      = 'לפרטים >';
+$_['text_details']      = 'צפיה בפריט';
+$_['text_disney']           = 'דיסני';
+$_['text_butterflies']           = 'פרפרים';
+$_['text_cartoons']           = 'מצוירים';
 
-$_['title'] = 'דף הבית';
 
-$_['text_home_accessories']      = 'אביזרים לבית';
-$_['text_animals']      = 'חיות';
+$_['red_img']          = 'catalog/view/theme/nofar_theme/image/five_layout/home-accessories-he.jpg';
+$_['lightblue_img']           = 'catalog/view/theme/nofar_theme/image/five_layout/animals-and-nature-he.jpg';
+$_['yellow_blue_img']           = 'catalog/view/theme/nofar_theme/image/five_layout/kids-nursery-glow-he.jpg';
+$_['purple_img']           = 'catalog/view/theme/nofar_theme/image/five_layout/canvas-paint-he.jpg';
+
+$_['text_animals']      = 'אביזרים לבית';
+$_['text_home_accessories']      = 'חיות וטבע';
+
 $_['text_canvas']      = 'קנבס';
+$_['text_wallpapers']      = 'טפטים';
+$_['text_wall_stickers']      = 'מדבקות קיר';
+
+$_['canvas_img']           = 'catalog/view/theme/nofar_theme/image/canvas-he.jpg';
+$_['butterflies_img']           = 'catalog/view/theme/nofar_theme/image/butterflies-he.jpg';
+$_['cartoons_img']           = 'catalog/view/theme/nofar_theme/image/cartoons-he.jpg';
+
+$_['accessories_link']           = 'https://www.stickerscenter.org/animals';
+$_['animals_link']           = 'https://www.stickerscenter.org/home-accessories';
+
+$_['text_canvas_desc']      = 'קנבס';
+$_['text_wallpapers_desc']      = 'טפטים';
+$_['text_wall_stickers_desc']      = 'מדבקות קיר';
+
+$_['text_secure']           = 'קנייה בטוחה';
+$_['secure_desc']           = 'בהתחייבות';
+
+$_['text_free_shipping']           = 'משלוח חינם';
+$_['free_shipping_desc']           = 'לכל הזמנה מעל 300 ש"ח';
+
+$_['text_service']           = 'שירות מעולה';
+$_['service_desc']           = 'לקוחות מרוצים';
+
+$_['text_return']           = '30 יום אחריות';
+$_['return_desc']           = 'החזר כספי מובטח';

@@ -9,8 +9,8 @@ $_['text_new_customer'] = 'לקוח חדש';
 $_['text_register'] = 'רישום חשבון';
 $_['text_register_account'] = 'על ידי יצירת חשבון תוכל לקנות מהר יותר, להיות מעודכן במצב ההזמנה שלך ולעקוב אחרי הזמנות קודמות.';
 $_['text_returning_customer'] = 'לקוח חוזר';
-$_['text_i_am_returning_customer'] = 'אני לקוח חוזר';
-$_['text_forgotten'] = 'שכחתי סיסמא';
+$_['text_i_am_returning_customer'] = 'לקוח קיים';
+$_['text_forgotten'] = 'שכחתי סיסמה';
 
 // Entry
 $_['entry_email'] = 'כתובת דואר אלקטרוני';
